@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TechHuddle\\Desktop\\Kalenska_TechHuddle\\DataTypes\\DataTypes\\DataTypes.csproj",
-      "projectName": "DataTypes",
-      "projectPath": "C:\\Users\\TechHuddle\\Desktop\\Kalenska_TechHuddle\\DataTypes\\DataTypes\\DataTypes.csproj",
+      "projectUniqueName": "C:\\Users\\TechHuddle\\Desktop\\Kalenska_TechHuddle\\DataTypes\\DataTypes\\Lesson1.csproj",
+      "projectName": "Lesson1",
+      "projectPath": "C:\\Users\\TechHuddle\\Desktop\\Kalenska_TechHuddle\\DataTypes\\DataTypes\\Lesson1.csproj",
       "packagesPath": "C:\\Users\\TechHuddle\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\TechHuddle\\Desktop\\Kalenska_TechHuddle\\DataTypes\\DataTypes\\obj\\",
       "projectStyle": "PackageReference",
