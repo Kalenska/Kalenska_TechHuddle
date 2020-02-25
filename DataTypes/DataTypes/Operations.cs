@@ -33,10 +33,16 @@ namespace Lesson1
             //Operations 3 
             Console.WriteLine("Enter a number?");
             a = int.Parse(Console.ReadLine());
-#pragma warning disable CS1718 // Comparison made to same variable
-            Console.WriteLine(a % 2 == 0);
-#pragma warning restore CS1718 // Comparison made to same variable
-            Console.WriteLine(a % 2 != 0);
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("The number is even.");
+                Console.ReadLine();
+            }
+            else
+                {
+                Console.WriteLine("The number is odd.");
+                Console.ReadLine();
+            }
 
             //Operations 4 
             Console.WriteLine("Enter first number - x?");
