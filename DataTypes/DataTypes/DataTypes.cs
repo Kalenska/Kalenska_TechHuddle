@@ -24,7 +24,7 @@ namespace Lesson1
             Console.WriteLine("What is your last name?");
             lastName = Console.ReadLine();
 
-            Console.WriteLine("Where city are you from?");
+            Console.WriteLine("What city are you from?");
             city = Console.ReadLine();
 
             Console.WriteLine("Enter your street?");
@@ -49,7 +49,7 @@ namespace Lesson1
             Console.WriteLine("Enter your university?");
             university = Console.ReadLine();
 
-            string response1 = ("Your Name is " + firstName + " " + lastName + " Age: " + age);
+            string response1 = ("Name: " + firstName + " " + lastName + ", Age: " + age);
             string response2 = ("University: " + university);
             Console.WriteLine(response1);
             Console.WriteLine(response2);

@@ -16,22 +16,22 @@ namespace Lesson1
             int side;
 
             //Operations 1 
-            Console.WriteLine("Enter first number?");
+            Console.WriteLine("Enter number - \"a\"?");
             int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number?");
+            Console.WriteLine("Enter second number - \"b\"?");
             int b = int.Parse(Console.ReadLine());
-            double result1 = Math.Pow(a, 2) + 2 * a * b + Math.Pow(b, 2);
-            Console.WriteLine("(a + B)^2 is: " + result1);
+            double result1 = Math.Pow(a, 2) + 2*a*b + Math.Pow(b, 2);
+            Console.WriteLine("(a + b)^2 is: " + result1);
 
             //Operations 2 
-            Console.WriteLine("Enter any number number?");
+            Console.WriteLine("Enter a number - \"r\"?");
             r = int.Parse(Console.ReadLine());
             double result2 = Math.PI * r;
             double result3 = Math.Pow(result2, 2);
-            Console.WriteLine("(Pi*Your number)^2 is: " + result3);
+            Console.WriteLine("(Pi*r)^2 is: " + result3);
 
             //Operations 3 
-            Console.WriteLine("Enter first number?");
+            Console.WriteLine("Enter a number?");
             a = int.Parse(Console.ReadLine());
 #pragma warning disable CS1718 // Comparison made to same variable
             Console.WriteLine(a % 2 == 0);
@@ -47,12 +47,12 @@ namespace Lesson1
             Console.WriteLine("x^y is: " + result5);
 
             //Operation 5
-            Console.WriteLine("Enter number of a height of triangle?");
+            Console.WriteLine("Enter height of a triangle?");
             height = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the side of triange?");
+            Console.WriteLine("Enter side of a triange?");
             side = int.Parse(Console.ReadLine());
             double result6 = height * side / 2;
-            Console.WriteLine("The are of the triange is: " + result6);
+            Console.WriteLine("The area of the triange is: " + result6);
 
         }
     }

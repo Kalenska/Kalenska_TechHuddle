@@ -15,9 +15,9 @@ namespace Lesson1
             int product;
 
             //Calculations:
-            Console.WriteLine("Enter first number?");
+            Console.WriteLine("Enter number?");
             a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number?");
+            Console.WriteLine("Enter another number?");
             b = int.Parse(Console.ReadLine());
 
             sum = a + b;
