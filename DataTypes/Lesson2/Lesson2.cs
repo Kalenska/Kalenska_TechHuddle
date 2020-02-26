@@ -6,7 +6,8 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            Calculations.Calculation();
+            Calculations.Excercise1();
+            Calculations.Excercise2();
         }
     }
 }
