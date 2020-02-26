@@ -26,9 +26,8 @@ namespace Lesson1
             //Operations 2 
             Console.WriteLine("Enter a number - \"r\"?");
             r = int.Parse(Console.ReadLine());
-            double result2 = Math.PI * r;
-            double result3 = Math.Pow(result2, 2);
-            Console.WriteLine("(Pi*r)^2 is: " + result3);
+            double result2 = Math.PI *  Math.Pow(r,2);
+            Console.WriteLine("(Pi*r)^2 is: " + result2);
 
             //Operations 3 
             Console.WriteLine("Enter a number?");

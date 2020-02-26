@@ -16,7 +16,6 @@ namespace Lesson1
             string age;
             string university;
 
-
             //Problem 1 
             Console.WriteLine("What is your first name?");
             firstName = Console.ReadLine();
