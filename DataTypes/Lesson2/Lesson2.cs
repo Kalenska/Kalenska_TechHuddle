@@ -7,7 +7,9 @@ namespace Lesson2
         static void Main(string[] args)
         {
      
-            Calculations.Excercise8();
+            
+            Calculations.Excercise4();
+     
         }
     }
 }

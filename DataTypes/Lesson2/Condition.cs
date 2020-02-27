@@ -4,7 +4,37 @@ using System.Text;
 
 namespace Lesson2
 {
-    class Condition
+    class Conditions
     {
+        public static void Excercise1()
+        {
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

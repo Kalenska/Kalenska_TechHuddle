@@ -93,15 +93,15 @@ namespace Lesson2
 
         public static void Excercise4()
         {
-            int a, b, c, d;
+            double a, b, c, d;
             Console.WriteLine("Enter the First number:");
-            a = int.Parse(Console.ReadLine());
+            a = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Second number:");
-            b = int.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Third number:");
-            c = int.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter the four number:");
-            d = int.Parse(Console.ReadLine());
+            d = double.Parse(Console.ReadLine());
 
             double avg = (a + b + c + d) / 4;
             Console.WriteLine("The average of the numbers is: " + avg);
@@ -174,16 +174,12 @@ namespace Lesson2
         }
 
         public static void Excercise9()
-        //Get century - Not correct ...
+        //Get century 
         {
             Console.WriteLine("Enter the desired year");
-            int y = 0;
-            for (; !Int32.TryParse(Console.ReadLine(), out y);) { }
-            y = Math.Abs(y);
-            int basecentury = 0;
-            basecentury = Convert.ToInt32(Math.Truncate((double)y / 100));
-
-            Console.WriteLine("Result: " + basecentury + "Century");
+            int year = Convert.ToInt32(Console.ReadLine());
+            int century = (year / 100 + 1);
+            Console.WriteLine("Result: " + century + "Century");
         }
 
 
@@ -192,18 +188,25 @@ namespace Lesson2
             Console.WriteLine("Enter radius");
             int a = Convert.ToInt32(Console.ReadLine());
 
-            //Volume
-            double volumeNumber = (4 * Math.PI * Math.Pow(a, 3) / 3);
-            Console.WriteLine("Volume: " + volumeNumber);
+            if (a <=0)
+            {
+                Console.WriteLine("The radius cannot be 0 or lower");
+            }
+            else
+            {
+                //Volume
+                double volumeNumber = (4 * Math.PI * Math.Pow(a, 3) / 3);
+                Console.WriteLine("Volume: " + volumeNumber);
 
-            //Surface
-            double surfaceNumber = (4 * Math.PI * Math.Pow(a, 2));
-            Console.WriteLine("Surface: " + surfaceNumber);
+                //Surface
+                double surfaceNumber = (4 * Math.PI * Math.Pow(a, 2));
+                Console.WriteLine("Surface: " + surfaceNumber);
+            } 
         }
 
         public static void Excercise11()
         {
-            int co1, co2;
+            int x, y;
 
             Console.Write("\n\n");
             Console.Write("Find the quadrant in which the coordinate point lies:\n");
@@ -211,11 +214,40 @@ namespace Lesson2
             Console.Write("\n\n");
 
             Console.Write("Input the value for X coordinate :");
-            co1 = Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
             Console.Write("Input the value for Y coordinate :");
-            co2 = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
 
-         
+         if (x == 0 && y != 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies on the x-axis");
+            }
+         else if (x != 0 && y == 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies on the y-axis");
+            }
+         else if (x == 0 && y == 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies on the origin");
+            }
+            else if (x > 0 && y > 0)
+            {
+                Console.WriteLine($"The coordinate point {x}, {y} lies in the First quadrant");
+            }
+            else if (x < 0 && y > 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies in the Second quadrant");
+            }
+            else if (x < 0 && y < 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies in the Third quadrant");
+            }
+            else if (x > 0 && y < 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies in the Forth quadrant");
+            }
+
+
         }
     }
 }
