@@ -92,6 +92,7 @@ namespace Lesson2
         }
 
         public static void Excercise4()
+            //Updated - from int to doble 
         {
             double a, b, c, d;
             Console.WriteLine("Enter the First number:");
@@ -174,7 +175,7 @@ namespace Lesson2
         }
 
         public static void Excercise9()
-        //Get century 
+        //updated - the formula 
         {
             Console.WriteLine("Enter the desired year");
             int year = Convert.ToInt32(Console.ReadLine());
@@ -184,6 +185,7 @@ namespace Lesson2
 
 
         public static void Excercise10()
+            //Updated - the radiuos cannot be 0 or lower 
         {
             Console.WriteLine("Enter radius");
             int a = Convert.ToInt32(Console.ReadLine());
@@ -218,35 +220,34 @@ namespace Lesson2
             Console.Write("Input the value for Y coordinate :");
             y = Convert.ToInt32(Console.ReadLine());
 
-         if (x == 0 && y != 0)
-            {
-                Console.Write($"The coordinate point {x}, {y} lies on the x-axis");
-            }
-         else if (x != 0 && y == 0)
-            {
-                Console.Write($"The coordinate point {x}, {y} lies on the y-axis");
-            }
-         else if (x == 0 && y == 0)
+          if (x == 0 && y == 0)
             {
                 Console.Write($"The coordinate point {x}, {y} lies on the origin");
             }
-            else if (x > 0 && y > 0)
+          if (x == 0 && y != 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies on the x-axis");
+            }
+          if (x != 0 && y == 0)
+            {
+                Console.Write($"The coordinate point {x}, {y} lies on the y-axis");
+            }
+          if (x > 0 && y > 0)
             {
                 Console.WriteLine($"The coordinate point {x}, {y} lies in the First quadrant");
             }
-            else if (x < 0 && y > 0)
+          if (x < 0 && y > 0)
             {
                 Console.Write($"The coordinate point {x}, {y} lies in the Second quadrant");
             }
-            else if (x < 0 && y < 0)
+          if (x < 0 && y < 0)
             {
                 Console.Write($"The coordinate point {x}, {y} lies in the Third quadrant");
             }
-            else if (x > 0 && y < 0)
+          if (x > 0 && y < 0)
             {
                 Console.Write($"The coordinate point {x}, {y} lies in the Forth quadrant");
             }
-
 
         }
     }
