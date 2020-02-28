@@ -23,7 +23,7 @@ namespace Lesson2
                 {
                     Console.WriteLine("Check if one is negative and one is positive: True");
                 }
-                else if (x >= 0 && y >= 0 && x <= 0 && y <= 0) 
+                else if (x >= 0 && y >= 0 && x <= 0 && y <= 0)
                 {
                     Console.WriteLine("Check if one is negative and one is positive: False");
                 }
@@ -31,6 +31,7 @@ namespace Lesson2
         }
 
         public static void Excercise2()
+        // OK 
         {
             while (true)
             {
@@ -48,35 +49,130 @@ namespace Lesson2
                     double doubleAbsolute = (abslValue * 2);
                     Console.WriteLine(doubleAbsolute);
                 }
-
-
             }
         }
 
 
+        public static void Excercise3()
+        // 
+        {
+            while (true)
+            {
+                Console.WriteLine("Input first integer");
+                int x = int.Parse(Console.ReadLine());
+                Console.WriteLine("Input second integer");
+                int y = int.Parse(Console.ReadLine());
+
+                int sum = (x + y);
 
 
+                if (sum == 20 || x == 20 || y == 20)
+                {
+                    Console.WriteLine("True");
+                }
+                else
+                {
+                    Console.WriteLine("False");
+                }
+            }
+        }
 
+        public static void Excercise4()
+        // Oк
+        {
+            while (true)
+            {
+                Console.WriteLine("Input first integer");
+                int x = int.Parse(Console.ReadLine());
 
+                if ((x >= 80 && x <= 120) || (x >= 180 && x <= 220))
+                {
+                    Console.WriteLine("True");
+                }
+                else
+                {
+                    Console.WriteLine("False");
+                }
+            }
+        }
 
+        public static void Excercise5()
+        // Oк
+        {
+            {
+                while (true)
+                {
+                    double x, y;
+                    char operation;
 
+                    Console.Write("Input first number: ");
+                    x = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Input operation: ");
+                    operation = Convert.ToChar(Console.ReadLine());
+                    Console.Write("Input second number: ");
+                    y = Convert.ToDouble(Console.ReadLine());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    if (operation == '+')
+                    {
+                        Console.WriteLine("{0} + {1} = {2}", x, y, x + y);
+                    }
+                    else if (operation == '-')
+                    {
+                        Console.WriteLine("{0} - {1} = {2}", x, y, x - y);
+                    }
+                    else if ((operation == '*') || (operation == 'x'))
+                    {
+                        Console.WriteLine("{0} * {1} = {2}", x, y, x * y);
+                    }
+                    else if (operation == '/')
+                    {
+                        Console.WriteLine("{0} / {1} = {2}", x, y, x / y);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong Character");
+                    }
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

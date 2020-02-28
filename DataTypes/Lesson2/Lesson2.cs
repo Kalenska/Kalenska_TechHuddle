@@ -19,7 +19,10 @@ namespace Lesson2
             //Calculations.Excercise11();
 
             //Conditions.Excercise1();
-            Conditions.Excercise2();
+            //Conditions.Excercise2();
+            //Conditions.Excercise3();
+            //Conditions.Excercise4();
+            Conditions.Excercise5();
         }
     }
 }
