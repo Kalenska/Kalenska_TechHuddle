@@ -8,11 +8,20 @@ namespace Lesson2
     class Strings
     {
         public static void Excercise1()
-        //?
+        //ok
         {
+            Console.WriteLine("Input a string");
+            string str = (Console.ReadLine());
+
+            char first = str[0];
+            char last = str[str.Length - 1];
+            Console.WriteLine(last + str.Substring(1, str.Length - 2) + first);
         }
 
-        public static void Excercise2()
+
+ 
+
+            public static void Excercise2()
         //?
         {
         }
