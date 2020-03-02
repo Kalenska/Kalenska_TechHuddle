@@ -22,7 +22,13 @@ namespace Lesson2
             //Conditions.Excercise2();
             //Conditions.Excercise3();
             //Conditions.Excercise4();
-            Conditions.Excercise5();
+            //Conditions.Excercise5();
+            //Conditions.Excercise6();
+
+            //Strings.Excercise1();
+            //Strings.Excercise2();
+            //Strings.Excercise3();
+            Strings.Excercise4();
         }
     }
 }

@@ -135,6 +135,53 @@ namespace Lesson2
                 }
             }
         }
+
+        public static void Excercise6()
+        // Why   Console.WriteLine("Wrong day number"); is always displayed? 
+
+        {
+            {
+                while (true)
+                {
+                    Console.Write("Input day Number: ");
+                    int x = int.Parse(Console.ReadLine());
+
+                    if (x == 1)
+                    {
+                        Console.WriteLine("Monday");
+                    }
+                    if (x == 2)
+                    {
+                        Console.WriteLine("Tuesday");
+                    }
+                    if (x == 3)
+                    {
+                        Console.WriteLine("Wednesday");
+                    }
+                    if (x == 4)
+                    {
+                        Console.WriteLine("Thursday");
+                    }
+                    if (x == 5)
+                    {
+                        Console.WriteLine("Friday");
+                    }
+                    if (x == 6)
+                    {
+                        Console.WriteLine("Saturday");
+                    }
+                    if (x == 7)
+                    {
+                        Console.WriteLine("Sunday");
+                    }
+                    else 
+                    {
+                        Console.WriteLine("Wrong day number");
+                    }
+                }
+            }
+
+        }
     }
 }
 
