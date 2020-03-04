@@ -25,10 +25,15 @@ namespace Lesson2
             //Conditions.Excercise5();
             //Conditions.Excercise6();
 
-            Strings.Excercise1();
+            //Strings.Excercise1();
+            //string result = Strings.Exercise();
+            // Console.WriteLine(result);
+
             //Strings.Excercise2();
             //Strings.Excercise3();
             //Strings.Excercise4();
+            Strings.Excercise5();
         }
+    
     }
 }
